@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Наголоси</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="btn__link back-btn__link">
+                    <img src="assets/icons/home.svg" alt="Icon home" class="back-btn__array">
+                    <span class="back-btn__text">Повернутися на головну сторінку</span>
+                </a>
+                <button class="theme-btn moon">                                    
+                    <img src="assets/icons/sun.svg" alt="Icon" class="theme-icon">                                          
+                </button> 
+            </div>
+        </div>
+    </header>
+
+    <section class="quiz">
+        <div class="container">
+            <div class="quiz__modal quiz-over-modal">
+                <div class="modal__content content">
+                    <h2 class="title content__title">Твій результат:</h2>
+                    <p class="title-other content__text">Ти відповів на
+                        <span id="correct-answer"></span> з
+                        <span id="number-of-all-questions-2"></span> питань
+                    </p>
+                    <button class="content__btn" id="btn-try-again">Спробувати ще раз</button>
+                    <a href="index.html" class="btn__link content__btn content__back-btn">Повернутися на головну
+                        сторінку</a>
+                </div>
+            </div>
+
+            <div class="quiz__question">
+                <div class="question__number question-number">
+                    <h3 class="number__title">Питання
+                        <span id="number-of-question"></span>
+                        з
+                        <span id="number-of-all-questions"></span>
+                    </h3>
+                </div>
+                <h4 class="title-other quiz__title" id="question"></h4>
+                <div class="quiz__options options">
+                    <div data-id="0" class="quiz__option option1"></div>
+                    <div data-id="1" class="quiz__option option2"></div>
+                    <div data-id="2" class="quiz__option option3"></div>
+                </div>
+                <div class="quiz__button button">
+                    <button class="quiz__btn" id="btn-next">Наступне питання</button>
+                </div>
+                <div class="quiz__tracker" id="answers-tracker">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/theme.js" type="module"></script>
+    <script src="script/quiz.js" type="module"></script>
+
+</body>
+
+</html>

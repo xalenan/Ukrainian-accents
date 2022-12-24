@@ -1,0 +1,73 @@
+.header-main-page {
+    padding: 3rem 0;
+}
+
+.header-main-page__wrapper {
+    text-align: right;
+}
+
+// =======================================
+.header__wrapper {
+    @include flex();
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+// =======================================
+.back-btn__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 2.5rem;
+    text-decoration: none;
+
+    @include media-mobile {
+        gap: 1.5rem;
+    }
+}
+
+.back-btn__array {
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    filter: brightness(0) invert(1);    /* Белый цвет иконки*/
+
+    @include media-mobile {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+body.light .back-btn__array {
+    filter: none;
+}
+
+.back-btn__text {
+    @include font ($size: 1.8rem);
+
+    @include media-mobile {
+        @include font ($size: 1.4rem);
+    }
+}
+
+body.light .back-btn__text {
+    color: $color-black;
+}
+
+// =======================================
+
+.theme-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.theme-icon {
+    transition: 0.7s;
+}
+
+body.light .theme-icon {
+    filter: brightness(0%);   /* Черный цвет иконки*/
+}

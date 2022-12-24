@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth; 
+    font-size: 10px;
+    line-height: 10px;
+}
+
+body {  
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    @include font ($size: 1.6rem, $height: 1.2, $weight: 400, $style: normal);
+    overflow-x: hidden;       
+    @extend %transition;
+    background: $color-body-bg;
+    color: $color-text;
+    min-height: 100vh;
+    &.hidden {
+        overflow: hidden;
+    }
+    &.light {
+        background: $color-body-light-bg;
+        color: $color-black;
+    }
+}
+
+.container {
+    max-width: $content-width;
+    width: 100%;
+    padding: 0 4rem;
+    margin: 0 auto;
+    @include media-tablet {
+        padding: 0 3rem;
+    }
+    @include media-tablet-small {
+        padding: 0 2rem;
+    }
+    @include media-mobile {
+        padding: 0 1rem;
+    }
+}
+
+.section {
+    @include section();
+}
+
+.title-main {
+    @include title-main();
+}
+
+body.light .title-main {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    @include title();
+}
+
+body.light .title {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.title-add {
+    @include title-add();
+}
+
+body.light .title-add {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.title-other {
+    @include title-other();
+}
+
+// .btn {
+//     @include btn();
+// }
+
+.btn__link {
+    @include btn-link();
+}
+

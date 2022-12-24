@@ -1,0 +1,48 @@
+.info__title {
+    margin-bottom: 5rem;
+}
+.info__wrapper {
+    max-width: 45rem;
+    margin-left: 45%;
+    padding-bottom: 10rem;
+
+    @include media-tablet {
+        padding-bottom: 7rem;
+    }
+    @include media-mobile {
+        margin-left: 30%;
+        padding-bottom: 4rem;
+    }
+}
+.info__items {
+    @include flex();
+    flex-direction: column;
+    padding-bottom: 5rem;
+    align-items: flex-start;
+}
+
+.info__title-add {
+    margin-bottom: 2rem;
+    text-align: start;
+}
+
+.info__word {
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.15rem;
+
+    @include media-tablet-small {
+        @include font($size: 1.4rem);
+    }
+}
+
+body.light .info__word {
+    font-weight: 500;
+}
+
+.info__word-special {
+    @include font($size: 1.3rem);
+}
+
+body.light .info__word-special {
+    font-weight: 500;
+}

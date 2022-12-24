@@ -1,0 +1,24 @@
+%link-color {
+    color: $color-light; 
+    text-decoration: none; 
+}  
+
+%link-color-active {
+    border-bottom: 3px solid #F1CDB3; 
+}
+
+%transition {
+    transition: all .3s ease-out;
+}
+
+
+
+
+// %font-primary {
+//     font-family: 'Noah', Arial, sans-serif;
+// }
+
+// %font-add {
+//     font-family: 'Geometria', Arial, sans-serif;
+// }
+
