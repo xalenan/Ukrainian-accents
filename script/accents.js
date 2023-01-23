@@ -19,7 +19,7 @@ const getWordsAccents = () => {
 
 //     }
 
-    const getData = (value) => {
+    const getData = () => {
         fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
             .then((res) => res.json())
             .then((data) => {
@@ -37,15 +37,15 @@ const getWordsAccents = () => {
 
     }
 
-//     links.forEach((link) => {
-//         link.addEventListener('click', (event) => {
-//             event.preventDefault();
-
+    links.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+                console.log(hello);
 //             const linkValue = link.textContent;
 
 //             getData(linkValue);
-//         })
-//     })
+        })
+    })
 
 //     if (localStorage.getItem('accents') && window.location.pathname === '/accents.html') {
 //         renderAccents(JSON.parse(localStorage.getItem('accents')))
