@@ -6,7 +6,7 @@ const getWordsAccents = () => {
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
-            localStorage.setItem('accents', JSON.stringify(data));
+                localStorage.setItem('accents', JSON.stringify(data));
             }) 
     }
 
