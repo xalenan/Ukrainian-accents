@@ -1,7 +1,6 @@
 const getWordsAccents = () => {
     const links = document.querySelectorAll('.abc__link');  
-    console.log(links);
-
+    
     const getData = () => {
         fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
             .then((res) => res.json())
@@ -13,7 +12,6 @@ const getWordsAccents = () => {
     links.forEach((link) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-                console.log("hello");
             getData();
 
         })
@@ -23,16 +21,16 @@ const getWordsAccents = () => {
 getWordsAccents();
 
 
-const getAccents = () => {
-    fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
-    .then((res) => res.json())
-        .then((data) => {
-            console.log(data);
+// const getAccents = () => {
+//     fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
+//     .then((res) => res.json())
+//         .then((data) => {
+//             console.log(data);
             
-        }) 
-}
+//         }) 
+// }
 
-getAccents();
+// getAccents();
 
 
 
