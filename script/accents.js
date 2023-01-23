@@ -66,6 +66,11 @@
 
 const getAccents = () => {
     fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
+    .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            
+        }) 
 }
 
 getAccents();
