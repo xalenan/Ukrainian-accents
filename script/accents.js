@@ -35,7 +35,7 @@ const getData = (value) => {
         }) 
 
 }
-
+getData();
 links.forEach((link) => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
