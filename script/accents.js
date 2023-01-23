@@ -1,82 +1,152 @@
 const getWordsAccents = () => {
     const links = document.querySelectorAll('.abc__link');  
+    console.log(links);
+//     const renderAccents = (accents) => {
+//         const accentsContainer = document.querySelector('.info__wrapper');  
 
-    const renderAccents = (accents) => {
-        const accentsContainer = document.querySelector('.info__wrapper');  
+//         accentsContainer.innerHTML = '';
 
-        accentsContainer.innerHTML = '';
+//         accents.forEach(accent => {
+//             const accentBlock = document.createElement('div');
+//             accentBlock.classList.add('.info__items');
 
-        accents.forEach(accent => {
-            const accentBlock = document.createElement('div');
-            accentBlock.classList.add('.info__items');
+//             accentBlock.innerHTML = `
+//                 <p class="info__word">${accent.accent}</p>
+//             `
 
-            accentBlock.innerHTML = `
-                <p class="info__word">${accent.accent}</p>
-            `
+//             accentsContainer.append(accentBlock);
+//         })
 
-            accentsContainer.append(accentBlock);
-        })
-
-    }
+//     }
 
     const getData = (value) => {
         fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
-                const array = data.filter((item) => item.id === value);
+//                 const array = data.filter((item) => item.id === value);
 
-                localStorage.setItem('accents', JSON.stringify(array));
+//                 localStorage.setItem('accents', JSON.stringify(array));
 
-                if (window.location.pathname !== '/accents.html') {
-                    window.location.href = 'accents.html';
-                } else {
-                    renderAccents(array)
-                }
+//                 if (window.location.pathname !== '/accents.html') {
+//                     window.location.href = 'accents.html';
+//                 } else {
+//                     renderAccents(array)
+//                 }
             }) 
 
     }
 
-    links.forEach((link) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
+//     links.forEach((link) => {
+//         link.addEventListener('click', (event) => {
+//             event.preventDefault();
 
-            const linkValue = link.textContent;
+//             const linkValue = link.textContent;
 
-            getData(linkValue);
-        })
-    })
+//             getData(linkValue);
+//         })
+//     })
 
-    if (localStorage.getItem('accents') && window.location.pathname === '/accents.html') {
-        renderAccents(JSON.parse(localStorage.getItem('accents')))
-    }
+//     if (localStorage.getItem('accents') && window.location.pathname === '/accents.html') {
+//         renderAccents(JSON.parse(localStorage.getItem('accents')))
+//     }
 
-        // Class Active
-    const linksWrapper = document.querySelector('.abc__wrapper');
+//         // Class Active
+//     const linksWrapper = document.querySelector('.abc__wrapper');
 
-    function changeClassActive() {
-        linksWrapper.addEventListener('click', (event) => {
-            links.forEach(links => links.classList.remove('active'));
-            event.target.classList.add('active'); 
-        })
-    }
+//     function changeClassActive() {
+//         linksWrapper.addEventListener('click', (event) => {
+//             links.forEach(links => links.classList.remove('active'));
+//             event.target.classList.add('active'); 
+//         })
+//     }
 
-    changeClassActive()
+//     changeClassActive()
     
 }
 
 getWordsAccents();
 
 
-const getAccents = () => {
-    fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
-    .then((res) => res.json())
-        .then((data) => {
-            console.log(data);
+// const getAccents = () => {
+//     fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
+//     .then((res) => res.json())
+//         .then((data) => {
+//             console.log(data);
             
-        }) 
-}
+//         }) 
+// }
 
-getAccents();
+// getAccents();
 
 
+
+
+
+
+
+
+
+// const links = document.querySelectorAll('.abc__link');  
+
+//     const renderAccents = (accents) => {
+//         const accentsContainer = document.querySelector('.info__wrapper');  
+
+//         accentsContainer.innerHTML = '';
+
+//         accents.forEach(accent => {
+//             const accentBlock = document.createElement('div');
+//             accentBlock.classList.add('.info__items');
+
+//             accentBlock.innerHTML = `
+//                 <p class="info__word">${accent.accent}</p>
+//             `
+
+//             accentsContainer.append(accentBlock);
+//         })
+
+//     }
+
+//     const getData = (value) => {
+//         fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
+//             .then((res) => res.json())
+//             .then((data) => {
+//                 console.log(data);
+//                 const array = data.filter((item) => item.id === value);
+
+//                 localStorage.setItem('accents', JSON.stringify(array));
+
+//                 if (window.location.pathname !== '/accents.html') {
+//                     window.location.href = 'accents.html';
+//                 } else {
+//                     renderAccents(array)
+//                 }
+//             }) 
+
+//     }
+
+//     links.forEach((link) => {
+//         link.addEventListener('click', (event) => {
+//             event.preventDefault();
+
+//             const linkValue = link.textContent;
+
+//             getData(linkValue);
+//         })
+//     })
+
+//     if (localStorage.getItem('accents') && window.location.pathname === '/accents.html') {
+//         renderAccents(JSON.parse(localStorage.getItem('accents')))
+//     }
+
+//         // Class Active
+//     const linksWrapper = document.querySelector('.abc__wrapper');
+
+//     function changeClassActive() {
+//         linksWrapper.addEventListener('click', (event) => {
+//             links.forEach(links => links.classList.remove('active'));
+//             event.target.classList.add('active'); 
+//         })
+//     }
+
+//     changeClassActive()
