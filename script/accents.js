@@ -64,4 +64,4 @@ function changeClassActive() {
 changeClassActive()
 }
 
-getAccents();
+// getAccents();
