@@ -1,4 +1,5 @@
-const links = document.querySelectorAll('.abc__link');  
+const getAccents = () => {
+    const links = document.querySelectorAll('.abc__link');  
 
 const renderAccents = (accents) => {
     const accentsContainer = document.querySelector('.info__wrapper');  
@@ -35,7 +36,7 @@ const getData = (value) => {
         }) 
 
 }
-getData();
+
 links.forEach((link) => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
@@ -61,3 +62,6 @@ function changeClassActive() {
 }
 
 changeClassActive()
+}
+
+getAccents();
