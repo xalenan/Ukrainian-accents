@@ -19,9 +19,10 @@ const renderAccents = (accents) => {
 }
 
 const getData = (value) => {
-    fetch('/db/accent.json')
+    fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
         .then((res) => res.json())
         .then((data) => {
+            console.log(data);
             const array = data.filter((item) => item.id === value);
 
             localStorage.setItem('accents', JSON.stringify(array));
