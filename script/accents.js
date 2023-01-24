@@ -1,13 +1,13 @@
 const getWordsAccents = () => {
     const links = document.querySelectorAll('.abc__link');  
     
-    const getData = () => {
+    const getData = (value) => {
         fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
                 const array = data.filter(function(item) {
-                    return item.id === 'A';
+                    return item.id === value;
                 });
                 localStorage.setItem('accents', JSON.stringify(array));
             }) 
@@ -19,7 +19,7 @@ const getWordsAccents = () => {
             const linkValue = link.textContent;
             console.log(linkValue);
             
-            getData();
+            getData(linkValue);
 
         })
     })
