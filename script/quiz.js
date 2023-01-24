@@ -173,6 +173,6 @@ links.forEach((link) => {
     })
 })
 
-if (localStorage.getItem('accents') && window.location.pathname === '/quiz.html') {
+if (localStorage.getItem('accents') && window.location.pathname === "/Ukrainian-accents/quiz.html") {
     renderAccents(JSON.parse(localStorage.getItem('accents')))
 }
