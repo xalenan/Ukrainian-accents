@@ -5,7 +5,8 @@ html {
 }
 
 body {  
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    // font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     @include font ($size: 1.6rem, $height: 1.2, $weight: 400, $style: normal);
     overflow-x: hidden;       
     @extend %transition;
@@ -68,10 +69,6 @@ body.light .title-add {
 .title-other {
     @include title-other();
 }
-
-// .btn {
-//     @include btn();
-// }
 
 .btn__link {
     @include btn-link();

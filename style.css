@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -333,7 +333,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.6rem;
   line-height: 1.2;
   font-weight: 400;
@@ -395,6 +395,7 @@ body.light {
   font-family: "Roboto Slab", "Merriweather", serif;
   color: #fff;
   text-align: center;
+  letter-spacing: 0.2rem;
 }
 @media (max-width: 992px) {
   .title-main {
@@ -433,6 +434,7 @@ body.light .title-main {
   font-family: "Roboto Slab", "Merriweather", serif;
   color: #fff;
   text-align: center;
+  letter-spacing: 0.2rem;
 }
 @media (max-width: 992px) {
   .title {
@@ -687,6 +689,11 @@ body.light .theme-icon {
     row-gap: 3rem;
   }
 }
+
+.abc__wrapper-main {
+  padding-bottom: 10rem;
+}
+
 .abc {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -768,7 +775,7 @@ body.light .preview__subtitle {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  row-gap: 0.3rem;
+  row-gap: 0.8rem;
   max-width: 20rem;
   margin: 0 auto;
 }
@@ -803,15 +810,7 @@ body.light .preview__subtitle {
 
 .info__word {
   margin-bottom: 0.5rem;
-  letter-spacing: 0.15rem;
-}
-@media (max-width: 520px) {
-  .info__word {
-    font-size: 1.4rem;
-    line-height: 1.2;
-    font-weight: 400;
-    font-style: normal;
-  }
+  letter-spacing: 0.2rem;
 }
 
 body.light .info__word {
@@ -887,7 +886,7 @@ body.light .quiz__question {
 }
 
 .quiz__title {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 500;
   color: #dfdfdf;
   margin-bottom: 2rem;
@@ -908,7 +907,7 @@ body.light .quiz__title {
   line-height: 1.2;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.3rem;
   background-color: #061424;
   color: #dfdfdf;
   margin-bottom: 2.5rem;
@@ -981,6 +980,7 @@ body.light .quiz__option.disabled {
   color: #dfdfdf;
   border: none;
   border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
   cursor: pointer;
   margin-bottom: 2.5rem;
   box-shadow: 0.2rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.9);

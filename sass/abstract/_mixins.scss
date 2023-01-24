@@ -34,6 +34,7 @@
     font-family: 'Roboto Slab', 'Merriweather', serif;
     color: $color-light;
     text-align: center;
+    letter-spacing: 0.2rem;
 
     @include media-laptop-change {
         @include font ($size: 4rem, $height: 1.5, $weight: 500);
@@ -54,6 +55,7 @@
     font-family: 'Roboto Slab', 'Merriweather', serif;
     color: $color-light;
     text-align: center;
+    letter-spacing: 0.2rem;
 
     @include media-laptop-change {
         @include font ($size: 3.5rem, $height: 1.2, $weight: 500);

@@ -50,7 +50,8 @@ body.light .quiz__question {
 }
 
 .quiz__title {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    // font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     color: $color-text;
     margin-bottom: 2rem;
@@ -69,7 +70,7 @@ body.light .quiz__title {
 
 .quiz__option {
     @include font ($size: 2rem);
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.3rem;
     background-color: $color-quiz-option;
     color: $color-text;
     margin-bottom: 2.5rem;
@@ -142,6 +143,7 @@ body.light .quiz__option.disabled {
     color: $color-text;
     border: none;
     border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
     cursor: pointer;
     @extend %transition;
     margin-bottom: 2.5rem;

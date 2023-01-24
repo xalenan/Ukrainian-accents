@@ -20,9 +20,10 @@
         column-gap: 4rem;
         row-gap: 3rem;
     }
-    @include media-mobile {
-        // justify-content: space-evenly;
-    }
+}
+
+.abc__wrapper-main {
+    padding-bottom: 10rem;
 }
 
 .abc {
