@@ -724,8 +724,8 @@ body.light .theme-icon {
 }
 @media (max-width: 520px) {
   .abc {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
 
