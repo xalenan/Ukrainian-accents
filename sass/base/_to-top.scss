@@ -24,16 +24,9 @@
         @extend %transition;
     }
 
-    @include media-mobile {
-        width: 5rem;
-        height: 5rem;
+    @include media-tablet-small {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
 
-.to-top__text {
-    color: $color-light;
-
-    @include media-mobile {
-        display: none;
-    }
-}

@@ -1,7 +1,15 @@
 .quiz {
     display: flex;
     align-items: center;
-    margin-top: 10rem;
+    padding-bottom: 8rem;
+
+    @include media-tablet {
+        padding-bottom: 5rem;
+    }
+
+    @include media-mobile {
+        padding-bottom: 3rem;
+    }
 }
 
 // ==========================================

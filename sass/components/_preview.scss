@@ -1,13 +1,5 @@
 .preview {
-    padding-top: 8rem;
-
-    @include media-tablet {
-        padding-top: 5rem;
-    }
-
-    @include media-mobile {
-        padding-top: 3rem;
-    }
+    padding-bottom: 3rem;
 }
 
 .preview__title-main {
@@ -19,16 +11,17 @@
     flex-wrap: wrap;
     column-gap: 3rem;
     row-gap: 2rem;
-    margin-bottom: 10rem;
-
-    @include media-tablet-small {
+    
+    @include media-tablet {
+        justify-content: center;
+    }
+    @include media-laptop-change {
+        justify-content: space-evenly;
         column-gap: 4rem;
         row-gap: 3rem;
-        margin-bottom: 8rem;
     }
     @include media-mobile {
-        justify-content: space-evenly;
-        margin-bottom: 5rem;
+        // justify-content: space-evenly;
     }
 }
 

@@ -46,6 +46,9 @@ body.light .back-btn__array {
 .back-btn__text {
     @include font ($size: 1.8rem);
 
+    @include media-tablet-small {
+        @include font ($size: 1.6rem);
+    }
     @include media-mobile {
         @include font ($size: 1.4rem);
     }
