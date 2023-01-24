@@ -9,10 +9,10 @@ const getWordsAccents = () => {
                 const array = data.filter((item) => item.id === value);
             
                 localStorage.setItem('accents', JSON.stringify(array));
-            
-                if (window.location.pathname !== "/accents.html") {
-                    window.location.href = 'accents.html';
-                }
+                console.log(window.location);
+//                 if (window.location.pathname !== "/accents.html") {
+//                     window.location.href = 'accents.html';
+//                 }
             }) 
     }
 
