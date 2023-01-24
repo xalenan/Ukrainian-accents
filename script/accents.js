@@ -11,7 +11,7 @@ const getWordsAccents = () => {
                 localStorage.setItem('accents', JSON.stringify(array));
             
                 if (window.location.pathname !== '/accents.html') {
-                    window.location.href = 'accents.html';
+                    window.location.href = './accents.html';
                 }
             }) 
     }
