@@ -179,15 +179,15 @@ body.light .quiz__btn {
 }
 
 .quiz__tracker div {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1rem;
+    width: 1rem;
     background-color: #535562;
     display: inline-block;
     border-radius: 50%;
 
     @include media-tablet {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 0.8rem;
+        width: 0.8rem;
     }
 }
 
