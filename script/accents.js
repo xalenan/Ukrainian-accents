@@ -20,16 +20,13 @@ const getWordsAccents = () => {
     }
         
     const getData = (value) => {
-//         fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
-        fetch('/db/accent.json')
+        fetch('https://accents-dba57-default-rtdb.firebaseio.com/db.json')
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 const array = data.filter((item) => item.id === value);
             
                 localStorage.setItem('accents', JSON.stringify(array));
 
-                console.log(window.location);
                 if (window.location.pathname !== "/Ukrainian-accents/accents.html") {
                     window.location.href = 'accents.html';
                 } else {
@@ -41,10 +38,8 @@ const getWordsAccents = () => {
     links.forEach((link) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log("hello");
             const linkValue = link.textContent;
-            console.log(linkValue);
-            
+                        
             getData(linkValue);
 
         })
