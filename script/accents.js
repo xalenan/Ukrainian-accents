@@ -16,6 +16,9 @@ const getWordsAccents = () => {
     links.forEach((link) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
+            const linkValue = link.textContent;
+            console.log(linkValue);
+            
             getData();
 
         })
